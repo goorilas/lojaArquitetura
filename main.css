@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+header > h2{
+    padding: 8px;
+    margin-left: 50px;
+}
+
+header, footer {
+    background-color: #561919f4;
+    padding: 8px;
+    color: #fff;
+}
+
+.logo{
+    height: 60px;
+    width: 60px;
+    display: flex;
+    margin-left: 0;
+    padding: 0;
+    position: relative;
+    
+}
+
+.container{
+        margin: auto;
+        display: flex;
+        align-items: center;
+}
+
+.container-flex{
+    display: flex;
+    padding: 8px;
+}
+
+nav {
+    background-color: #561919f4;
+    padding: 16px 0;
+    display: none;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: small;
+}
+
+.menu-hamburguer{
+    width: 32px;
+    cursor: pointer;
+    position: absolute;
+    right: 10%;
+    margin-top: 10px;
+}
+
+.menu-hamburguer span{
+    height: 2px; /* tamanho do item */
+    width: 100%; /* largura */
+    background-color: #fff;
+    display: block;
+    margin-bottom: 4px;
+    
+}
+
+.sobreloja img{
+    max-width: 500px;
+    padding: 15px;
+    margin-left: 100px;
+}
+
+.textosobre h2{
+    padding: 8px;
+    text-align: center;
+}
+
+.textosobre{
+    text-align: justify;
+    padding: 50px;
+    text-decoration: underline;
+}
+
+.lista-veiculos{
+    flex-wrap: wrap; /* para fazer quebra de linhas entre itens */
+    max-width: 1333px;
+}
+
+.lista-veiculos li{
+    list-style: none;
+    max-width: 30%;
+    margin-bottom: 24px;
+}
+
+.lista-veiculos li img{
+    max-width: 100%;
+}
+
+.lista-veiculos li h3{
+    margin: 16px 0;
+}
+
+.iten-central{
+    margin: 0 5%; /* 0 nas vertical e 5% nas laterais */
+}
+
+button{
+    display: block;
+    width: 50%;
+    padding: 12px;
+    border: none;
+    background-color: #119759;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+.price{
+    margin: 16px 0;
+    display: block;
+}
+
+.price del{
+    color: #ccc;
+    font-size: 14px;
+}
+
+footer{
+    padding: 3px;
+    text-align: center;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
