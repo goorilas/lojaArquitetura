@@ -4,104 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja Avante Arquitetura</title>
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" type="text/css" href="./index.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-</head>
+
 <body>
-    <header>
-        <div class="container container-flex">
-            <h2>
-                AVANTE ARQUITETURA
-            </h2>
-            <div class="logo">
-                <img src="./imagenLofts/logoavante.png" alt="logo">
-            </div>
-            <div class="menu-hamburguer">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+    <!-- Cabeçalho -->
+    <header class="bg-primary text-white">
+        <div class="container d-flex align-itens-center gap-1">
+            <img class="logo" src="./imagenLofts/logoavante.png" alt="logo arquitetura">
+        <span class="span-title">
+            AVANTE ARQUITETURA
+        </span>
+        <button class="btn-pri">Arquitetura</button>
+        <button class="btn-pri">Paizagismo</button>
+        <button class="btn-pri">Design de Interiores</button>
         </div>
-        <nav>
-            <div class="container">
-                <ul>
-                    <li>
-                        <a href="#">Arquitetura</a>
-                    </li>
-                    <li>
-                        <a href="#">Paisagismo</a>
-                    </li>
-                    <li>
-                        <a href="#">Designer de interiores</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
     </header>
-    <div class="container" id="carousel">
-        <img src="./imagenLofts/arqui11.jpg" alt="sala arquitetura">
-        <img src="./imagenLofts/arqui2.jpg" alt="cozinha arquitetura">
-        <img src="./imagenLofts/arqui5.jpg" alt="quarto arquitetura">
+    <div id="carousel-imagens">
+        <img src="./imagenLofts/arqui11.jpg" alt="casa decorada">
+        <img src="./imagenLofts/arqui2.jpg" alt="casa decorada">
+        <img src="./imagenLofts/arqui5.jpg" alt="casa decorada">
     </div>
-    <section>
-        <div class="sobreloja container">
-            <img src="./imagenLofts/cidade.jpg" alt="imagem cidade 3d">
-            <div class="textosobre">
-                <h2>Sobre AVANTE ARQUITETURA</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque eaque hic ab in quisquam. Repellendus est facilis quia dolore quibusdam fuga ratione. Impedit dolore minima quibusdam fugiat nostrum vero exercitationem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet labore illum mollitia obcaecati modi quia suscipit unde laborum odio, beatae ea deserunt sunt! Enim sint fugit tempore laboriosam et modi!
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque eaque hic ab in quisquam. Repellendus est facilis quia dolore quibusdam fuga ratione. Impedit dolore minima quibusdam fugiat nostrum vero exercitationem.
-                </p>
+        <!-- Conteudo -->
+        <div class="content">
+            <div class="container">
+    
+                <!-- Sobre a loja -->
+                <!-- row = cria uma linha com 12 colunas -->
+                <div class="row gap-1">
+                    <!-- col-4 col-md-3 col-sm-12 = (layout responsivo) indica como a div vai se comportar em cada tamanho de tela -->
+                    <!-- col-4 = ocupa 4 colunas por padrão | col-md-3 = ocupa 3 colunas quando a tela está entre 501px e 700px | col-sm-12 = ocupa 12 colunas quando a tela tem até 500px -->
+                    <div class="col-4 col-md-3 col-sm-12 bg-secondary">
+                        <img class="w-100" src="./imagenLofts/cidade.jpg" alt="...">
+                    </div>
+                    <div class="col-8 col-md-9 col-sm-12">
+                        <strong><span class="text-primary">Sobre a loja</span></strong>
+                        <hr class="border-primary">
+                        <p class="text-align-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
+                            sunt consequatur? Unde
+                            nostrum, laboriosam dignissimos voluptate facilis mollitia dolores ratione hic quo! Repudiandae
+                            veniam, quae fuga exercitationem quasi dolores aspernatur?</p>
+                    </div>
+                </div>
+                <br>
+                <!-- Produtos -->
+                <div class="row gap-1">
+                    <div class="col-12">
+                        <strong><span class="text-primary">Produtos</span></strong>
+                        <hr class="border-primary">
+                    </div>
+                    <div id="produtos_lista" class="col-12 row gap-2">
+                        <!-- a lista de produtos é gerada automaticamente no index.js e é colocada aqui  -->
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
-    <section>
-        <h2 class="destaque">Em Destaque</h2>
-        <div class="container container-flex">
-            <ul class="container-flex lista-arquitetura">
-                <li>
-                    <img src="./imagenLofts/arqui1.jpg" alt="escritório planejada">
-                    <h3>Escritório planejado</h3>
-                    <div class="price">
-                        <strong>R$ 25.000,00</strong>
-                    </div>
-                    <button type="button">Adicionar ao carrinho</button>
-                </li>
-                <li>
-                    <img src="./imagenLofts/arqui10.jpg" alt="sala arquitetonica">
-                    <h3>Sala arquitetônica</h3>
-                    <div class="price">
-                        <strong>R$ 30.000,00</strong>
-                    </div>
-                    <button type="button">Adicionar ao carrinho</button>
-                </li>
-                <li>
-                    <img src="./imagenLofts/arqui12.jpg" alt="cozinha gourmet">
-                    <h3>Cozinha gourmet</h3>
-                    <div class="price">
-                        <strong>R$ 28.000,00</strong>
-                    </div>
-                    <button type="button">Adicionar ao carrinho</button>
-                </li>
-                <li>
-                    <img src="./imagenLofts/arqui3.jpg" alt="sala planejada">
-                    <h3>Sala planejada</h3>
-                    <div class="price">
-                        <strong>R$ 28.000,00</strong>
-                    </div>
-                    <button type="button">Adicionar ao carrinho</button>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <footer>
-        <p>
-            2024 &copy; AVANTE ARQUITETURA - Todos os direitos reservados
-        </p>
-    </footer>
+        <footer>
+            &copy;AVANTE ARQUITETURA - Todos os direitos reservados
+        </footer>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
