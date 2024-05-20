@@ -40,7 +40,7 @@
 }
 
 #carousel-imagens {
-    width: 80%; /* Defina a largura do carrossel conforme necessário */
+    width: 100%; /* Defina a largura do carrossel conforme necessário */
     margin: 0 auto; /* Centraliza o carrossel horizontalmente */
 }
 
