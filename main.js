@@ -1,12 +1,3 @@
-$(document).ready(function() {
-    $('#carousel-imagens').slick({
-        dots: true,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 1,
-        adaptiveHeight: true
-    })
-})
 
 // dispara os comandos depois que todos os elementos já foram carregados
 document.addEventListener("DOMContentLoaded", function () {

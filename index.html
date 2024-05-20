@@ -7,65 +7,86 @@
     <link rel="stylesheet" type="text/css" href="./index.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-
+    <style>
+        /* Estilo adicional para o carrossel */
+        #carousel-imagens {
+            width: 80%; /* Defina a largura do carrossel conforme necessário */
+            margin: 0 auto; /* Centraliza o carrossel horizontalmente */
+        }
+    </style>
+</head>
 <body>
     <!-- Cabeçalho -->
     <header class="bg-primary text-white">
-        <div class="container d-flex align-itens-center gap-1">
+        <div class="container d-flex align-items-center gap-1">
             <img class="logo" src="./imagenLofts/logoavante.png" alt="logo arquitetura">
-        <span class="span-title">
-            AVANTE ARQUITETURA
-        </span>
-        <button class="btn-pri">Arquitetura</button>
-        <button class="btn-pri">Paizagismo</button>
-        <button class="btn-pri">Design de Interiores</button>
+            <span class="span-title">
+                AVANTE ARQUITETURA
+            </span>
+            <button class="btn-pri">Arquitetura</button>
+            <button class="btn-pri">Paisagismo</button>
+            <button class="btn-pri">Design de Interiores</button>
         </div>
     </header>
+
+
+    <!-- Carrossel de Imagens -->
     <div id="carousel-imagens">
         <img src="./imagenLofts/arqui11.jpg" alt="casa decorada">
         <img src="./imagenLofts/arqui2.jpg" alt="casa decorada">
         <img src="./imagenLofts/arqui5.jpg" alt="casa decorada">
     </div>
-        <!-- Conteudo -->
-        <div class="content">
-            <div class="container">
-    
-                <!-- Sobre a loja -->
-                <!-- row = cria uma linha com 12 colunas -->
-                <div class="row gap-1">
-                    <!-- col-4 col-md-3 col-sm-12 = (layout responsivo) indica como a div vai se comportar em cada tamanho de tela -->
-                    <!-- col-4 = ocupa 4 colunas por padrão | col-md-3 = ocupa 3 colunas quando a tela está entre 501px e 700px | col-sm-12 = ocupa 12 colunas quando a tela tem até 500px -->
-                    <div class="col-4 col-md-3 col-sm-12 bg-secondary">
-                        <img class="w-100" src="./imagenLofts/cidade.jpg" alt="...">
-                    </div>
-                    <div class="col-8 col-md-9 col-sm-12">
-                        <strong><span class="text-primary">Sobre a loja</span></strong>
-                        <hr class="border-primary">
-                        <p class="text-align-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
-                            sunt consequatur? Unde
-                            nostrum, laboriosam dignissimos voluptate facilis mollitia dolores ratione hic quo! Repudiandae
-                            veniam, quae fuga exercitationem quasi dolores aspernatur?</p>
-                    </div>
+
+
+    <!-- Conteudo -->
+    <div class="content">
+        <div class="container">
+            <!-- Sobre a loja -->
+            <div class="row gap-1">
+                <div class="col-4 col-md-3 col-sm-12 bg-secondary">
+                    <img class="w-100" src="./imagenLofts/cidade.jpg" alt="...">
                 </div>
-                <br>
-                <!-- Produtos -->
-                <div class="row gap-1">
-                    <div class="col-12">
-                        <strong><span class="text-primary">Produtos</span></strong>
-                        <hr class="border-primary">
-                    </div>
-                    <div id="produtos_lista" class="col-12 row gap-2">
-                        <!-- a lista de produtos é gerada automaticamente no index.js e é colocada aqui  -->
-                    </div>
+                <div class="col-8 col-md-9 col-sm-12">
+                    <strong><span class="text-primary">Sobre a loja</span></strong>
+                    <hr class="border-primary">
+                    <p class="text-align-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, sunt consequatur? Unde nostrum, laboriosam dignissimos voluptate facilis mollitia dolores ratione hic quo! Repudiandae veniam, quae fuga exercitationem quasi dolores aspernatur?</p>
+                </div>
+            </div>
+            <br>
+            <!-- Produtos -->
+            <div class="row gap-1">
+                <div class="col-12">
+                    <strong><span class="text-primary">Produtos</span></strong>
+                    <hr class="border-primary">
+                </div>
+                <div id="produtos_lista" class="col-12 row gap-2">
+                    <!-- a lista de produtos é gerada automaticamente no index.js e é colocada aqui  -->
                 </div>
             </div>
         </div>
-        <footer>
-            &copy;AVANTE ARQUITETURA - Todos os direitos reservados
-        </footer>
+    </div>
+
+
+    <footer>
+        &copy;AVANTE ARQUITETURA - Todos os direitos reservados
+    </footer>
+
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./main.js"></script>
+    <script>
+        // Inicializa o carrossel
+        $(document).ready(function(){
+            $('#carousel-imagens').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true
+            });
+        });
+    </script>
 </body>
 </html>
