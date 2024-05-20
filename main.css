@@ -39,6 +39,11 @@
     bottom: 0;
 }
 
+#carousel-imagens {
+    width: 100%; /* Defina a largura do carrossel conforme necessário */
+    margin: 0 auto; /* Centraliza o carrossel horizontalmente */
+}
+
 .btn-pri {
     background-color: var(--color-primary);
     color: white;
